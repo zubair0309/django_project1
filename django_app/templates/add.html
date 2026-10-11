@@ -1,0 +1,29 @@
+<!DOCTYPE html>                                                                           
+<html>
+<head>
+  <h1>Form</h1>                                                                             
+</head>
+<body>
+ <form method="POST">
+   {% csrf_token %}
+   <label>Name :</label>
+   <input type="text" name="name"><br></br>
+   <label>Age :</label>
+   <input type="number" name="age"><br></br>                                                 
+   <label>Roll_No :</label>
+   <input type="number" name="roll_no"><br></br>                                             
+   <label>contact</label>                                                                    
+   <input type="text" name="contact"><br></br>
+   <label>Telugu Marks :</label>                                                             
+   <input type="number" name="telugu"><br></br>
+   <label>Hindi Marks :</label>
+   <input type="number" name="hindi"><br></br>
+   <label>English Marks :</label>                                                            
+   <input type="number" name="english"><br></br>
+   <label>Science Marks :</label>                                                            
+   <input type="number" name="science"><br></br>
+   <button type="submit"> Add </button>                                                   
+ </form><br></br>
+ <h2>{{ message }}</h2>
+ </body>                                                                                  
+ </html>
